@@ -12,10 +12,12 @@ function ToggleDrawer()
 	if ($("#horrific-drawer").css("display") === "none")
 	{
 		$("#horrific-drawer").css("display", "block");
+		$("#menu_button").css("background-color", "#BFA121");
 	}
 	else
 	{
 		$("#horrific-drawer").css("display", "none");
+		$("#menu_button").css("background-color", "rgba(0,0,0,0)");
 	}
 }
 </script>
@@ -24,7 +26,7 @@ function ToggleDrawer()
 <body>
 	<div id="page-header">
 		<a href="index.html"><span class="title">WEBSITE</span></a>
-        <button class="menu_button_button" onClick="ToggleDrawer()"><img src="svg/three170.svg" class="menu_button"></button>
+        <button class="menu_button_button" onClick="ToggleDrawer()" id="menu_button"><img src="svg/three170.svg" class="menu_button"></button>
 	</div>
     <div id="horrific-drawer">
     <p class="drawer-text">MENU</p>
